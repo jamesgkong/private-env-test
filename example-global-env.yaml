@@ -1,0 +1,26 @@
+type: environment.insomnia.rest/5.0
+name: example-global-env
+meta:
+  id: wrk_a89cd30fc5ba40a8bf3b42ca7d5fc877
+  created: 1753777013097
+  modified: 1753777013097
+  description: ""
+environments:
+  name: Base Environment
+  meta:
+    id: env_0cdaf705e14fca1fdfe8242f76474949a6bdad89
+    created: 1753777013101
+    modified: 1753777023371
+    isPrivate: false
+  data:
+    global-env-key: global-env-value
+  subEnvironments:
+    - name: Shared Environment
+      meta:
+        id: env_62746026f1bc4833a9c87069489051e2
+        created: 1753777025354
+        modified: 1753777046963
+        isPrivate: false
+        sortKey: 1753777025354
+      data:
+        global-shared-key: global-shared-value
