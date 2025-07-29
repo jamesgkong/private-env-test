@@ -17,14 +17,16 @@ collection:
       sortKey: -1753776833011
     method: GET
     parameters:
-      - id: pair_58b2de8b2aaa48dfbf84fa0bdfa9dffe
-        name: some-key
+      - name: some-key
         value: "{{ _['private-env-key'] }}"
-        description: ""
         disabled: false
+        id: pair_58b2de8b2aaa48dfbf84fa0bdfa9dffe
     headers:
       - name: User-Agent
         value: insomnia/11.3.0
+    scripts:
+      preRequest: ""
+      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -59,8 +61,8 @@ environments:
       data:
         shared-env-key: shared-env-value
 spec:
-  contents: some text
+  contents: some more text
   meta:
     id: spc_44bc3ce65c594e21b13816d6af118b5c
     created: 1753776771374
-    modified: 1753776829520
+    modified: 1753778434443

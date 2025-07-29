@@ -17,14 +17,16 @@ collection:
       sortKey: -1753776909940
     method: GET
     parameters:
-      - id: pair_d3ed7e8c043a4ae9b93881ca25affa9b
-        name: some-key
+      - name: some-key
         value: ""
-        description: ""
         disabled: false
+        id: pair_d3ed7e8c043a4ae9b93881ca25affa9b
     headers:
       - name: User-Agent
         value: insomnia/11.3.0
+    scripts:
+      preRequest: ""
+      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
