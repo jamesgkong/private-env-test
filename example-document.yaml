@@ -1,0 +1,66 @@
+type: spec.insomnia.rest/5.0
+name: example-document
+meta:
+  id: wrk_af14e2bd7bc24803be9d739703051a42
+  created: 1753776771357
+  modified: 1753776771357
+  description: ""
+collection:
+  - url: https://httpbin.konghq.com/anything
+    name: New Request
+    meta:
+      id: req_926da7da17bb4d1780d114af6f6232e8
+      created: 1753776833011
+      modified: 1753776868404
+      isPrivate: false
+      description: ""
+      sortKey: -1753776833011
+    method: GET
+    parameters:
+      - id: pair_58b2de8b2aaa48dfbf84fa0bdfa9dffe
+        name: some-key
+        value: "{{ _['private-env-key'] }}"
+        description: ""
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_054239a94734766a1ca0c82fd4f3823230f090d5
+    created: 1753776771376
+    modified: 1753776771376
+environments:
+  name: Base Environment
+  meta:
+    id: env_054239a94734766a1ca0c82fd4f3823230f090d5
+    created: 1753776771375
+    modified: 1753776785377
+    isPrivate: false
+  data:
+    base-env-key: base-env-value
+  subEnvironments:
+    - name: Shared Environment
+      meta:
+        id: env_da818d5b598742a0b8f77fe752de757a
+        created: 1753776789034
+        modified: 1753776803407
+        isPrivate: false
+        sortKey: 1753776789034
+      data:
+        shared-env-key: shared-env-value
+spec:
+  contents: some text
+  meta:
+    id: spc_44bc3ce65c594e21b13816d6af118b5c
+    created: 1753776771374
+    modified: 1753776829520
